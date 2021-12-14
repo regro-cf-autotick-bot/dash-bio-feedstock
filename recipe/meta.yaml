@@ -1,5 +1,5 @@
 {% set name = "dash-bio" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dash_bio-{{ version }}.tar.gz
-  sha256: b0bf9e98c1c3eb96b47f1983f427de51cf573963d85e2218547284118e9781f8
+  sha256: 5ff4792cd175ae2e4996a5b5902e20a441647e6e316f8c89dd98c3c002377711
 
 build:
   number: 0
