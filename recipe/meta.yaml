@@ -1,5 +1,5 @@
 {% set name = "dash-bio" %}
-{% set version = "0.9.0" %}
+{% set version = "1.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dash_bio-{{ version }}.tar.gz
-  sha256: 5ff4792cd175ae2e4996a5b5902e20a441647e6e316f8c89dd98c3c002377711
+  sha256: 8603dc0ba22c8124d21f40c8239e5367c45744c12cef2a7b3be310e6c17eccb7
 
 build:
   number: 0
@@ -20,14 +20,22 @@ requirements:
     - pip
     - python >=3.6
   run:
+    - python >=3.6
     - dash >=1.6.1
     - dash-core-components
     - dash-html-components
     - dash-table
     - pandas
-    - python >=3.6
-    - scikit-learn >=0.20.1
     - scipy
+    - scikit-learn >=0.20.1
+    - biopython >=1.77
+    - colour
+    - geoparse >=1.1.0
+    - jsonschema
+    - parmed
+    - periodictable
+    - requests
+    - typing_extensions
 
 test:
   imports:
