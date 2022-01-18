@@ -20,14 +20,22 @@ requirements:
     - pip
     - python >=3.6
   run:
+    - python >=3.6
     - dash >=1.6.1
     - dash-core-components
     - dash-html-components
     - dash-table
     - pandas
-    - python >=3.6
-    - scikit-learn >=0.20.1
     - scipy
+    - scikit-learn >=0.20.1
+    - biopython >=1.77
+    - colour
+    - geoparse >=1.1.0
+    - jsonschema
+    - parmed
+    - periodictable
+    - requests
+    - typing_extensions
 
 test:
   imports:
